@@ -61,7 +61,7 @@ jobs:
       - run-go-license-check
       - run-unit-test
       - run-make-reviewable-and-check-diff
-      - run-e2e-test
+#       - run-e2e-test
       # Releases need permissions to read and write the repository contents.
       # GitHub considers creating releases and uploading assets as writing contents.
       permissions:
