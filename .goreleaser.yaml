@@ -39,13 +39,13 @@ builds:
     binary: "{{ .ProjectName }}_exporter_v{{ .Version }}"
 archives:
   - id: provider-archive
-    format: zip
-    builds:
+    formats: [zip]
+    ids:
       - binary-build
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
   - id: exporter-archive
-    format: binary
-    builds:
+    formats: [binary]
+    ids:
       - exporter-build
     name_template: "{{ .ProjectName }}_exporter_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 changelog:
