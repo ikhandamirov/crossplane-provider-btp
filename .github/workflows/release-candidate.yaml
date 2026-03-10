@@ -68,11 +68,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish Artifacts to DockerHub
-        run: make publish VERSION=${{ steps.version.outputs.version }}
-        env:
-          DOCKER_REGISTRY: ${{ vars.REGISTRY_URL }}
-          BUILD_REGISTRY: ${{ vars.REGISTRY_URL }}
+#       - name: Publish Artifacts to DockerHub
+#         run: make publish VERSION=${{ steps.version.outputs.version }}
+#         env:
+#           DOCKER_REGISTRY: ${{ vars.REGISTRY_URL }}
+#           BUILD_REGISTRY: ${{ vars.REGISTRY_URL }}
 
       - name: Build Exporter Binaries
         run: |
