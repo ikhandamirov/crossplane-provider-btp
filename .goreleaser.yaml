@@ -47,6 +47,6 @@ archives:
     formats: [binary]
     ids:
       - exporter-build
-    name_template: "{{ .ProjectName }}_exporter_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    name_template: "{{ .ProjectName }}_exporter_v{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 changelog:
   use: github-native
